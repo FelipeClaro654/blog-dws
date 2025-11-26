@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Grid = styled.div`
+export const Grid = styled.div`
   display: grid;
   gap: ${(props) => props.theme.grid.mobile.gap};
   grid-template-columns: repeat(
@@ -16,4 +16,3 @@ const Grid = styled.div`
     gap: ${(props) => props.theme.grid.desktop.gap};
   }
 `;
-export default Grid;
