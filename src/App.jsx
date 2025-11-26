@@ -1,11 +1,10 @@
-import Column from "./components/layout/Column";
-import Container from "./components/layout/container";
-import Grid from "./components/layout/Grid";
+import Header from "./components/header";
+import { Container } from "./components/layout";
 
 function App() {
   return (
     <Container>
-      <Grid></Grid>
+      <Header />
     </Container>
   );
 }

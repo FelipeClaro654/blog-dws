@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const Grid = styled.div`
+export const Grid = styled.div.attrs((props) => ({
+  as: props.$as || "div",
+}))`
   display: grid;
-  gap: ${(props) => props.theme.grid.mobile.gap};
+  gap: ${(props) => props.theme.grid.mobile.gutter};
   grid-template-columns: repeat(
     ${(props) => props.theme.grid.mobile.columns},
     1fr
@@ -13,6 +15,6 @@ export const Grid = styled.div`
       ${(props) => props.theme.grid.desktop.columns},
       1fr
     );
-    gap: ${(props) => props.theme.grid.desktop.gap};
+    gap: ${(props) => props.theme.grid.desktop.gutter};
   }
 `;
