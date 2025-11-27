@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Flex } from "./Flex";
-import { BodyLargeRegular } from "../typography";
+import { Flex } from "./layout/Flex";
+import { BodyLargeRegular } from "./typography";
 
 export const Badge = styled(Flex)`
   border-radius: ${(props) => props.theme.borders.radius.regular};

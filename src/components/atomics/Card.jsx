@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex } from "./Flex";
+import { Flex } from "./layout/Flex";
 
 export const Card = styled(Flex)`
   cursor: pointer;

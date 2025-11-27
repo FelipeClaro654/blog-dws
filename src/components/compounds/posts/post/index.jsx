@@ -6,15 +6,15 @@ import {
   PostDataAndAuthor,
   PostTitle,
 } from "./styles";
-import { Card } from "@atomics/layout";
+import spaces from "@/styles/theme/spaces";
+import { formatPostDate } from "@/utils/date";
 import {
   Badge,
   BadgeText,
   DotSeparator,
   Flex,
-} from "@/components/atomics/layout";
-import spaces from "@/styles/theme/spaces";
-import { formatPostDate } from "@/utils/date";
+  Card,
+} from "@/components/atomics";
 
 export const Post = memo(({ post }) => {
   const navigate = useNavigate();
