@@ -2,16 +2,16 @@ import MagnifyingGlass from "../../icons/MagnifyingGlass";
 import { Column } from "../layout";
 import LogoSvg from "./LogoSvg";
 import {
-  HeaderContainer,
+  HeaderGrid,
   LogoArea,
   LogoText,
   SearchIconArea,
-  SearchIconContainer,
+  SearchIconGrid,
 } from "./styles";
 
 const Header = () => {
   return (
-    <HeaderContainer $as="header">
+    <HeaderGrid $as="header">
       <Column $mobile={3} $center>
         <LogoArea>
           <LogoSvg />
@@ -20,12 +20,12 @@ const Header = () => {
       </Column>
       <Column $mobile={1} $center>
         <SearchIconArea>
-          <SearchIconContainer>
+          <SearchIconGrid>
             <MagnifyingGlass />
-          </SearchIconContainer>
+          </SearchIconGrid>
         </SearchIconArea>
       </Column>
-    </HeaderContainer>
+    </HeaderGrid>
   );
 };
 

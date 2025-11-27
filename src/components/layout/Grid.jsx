@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div.attrs((props) => ({
+export const Grid = styled.div.attrs((props) => ({
   as: props.$as || "div",
 }))`
   width: 100%;
@@ -13,7 +13,7 @@ export const Container = styled.div.attrs((props) => ({
   );
 
   ${(props) => props.theme.breakpoint.desktop} {
-    max-width: ${(props) => props.theme.grid.desktop.c};
+    max-width: ${(props) => props.theme.grid.desktop.container};
     grid-template-columns: repeat(
       ${(props) => props.theme.grid.desktop.columns},
       1fr

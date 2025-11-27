@@ -6,7 +6,6 @@ const usePosts = () => {
     queryKey: ["posts"],
     queryFn: getPosts,
   });
-  debugger;
   return { error, data };
 };
 

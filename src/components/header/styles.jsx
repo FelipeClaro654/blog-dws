@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Container, Flex } from "../layout";
+import { Grid, Flex } from "../layout";
 
-export const HeaderContainer = styled(Container)`
+export const HeaderGrid = styled(Grid)`
   background: linear-gradient(
     to right,
     ${(props) => props.theme.colors.neutrals.white} 30%,
@@ -11,7 +11,7 @@ export const HeaderContainer = styled(Container)`
   border-bottom: 1px solid ${(props) => props.theme.colors.neutrals.lightest};
 `;
 
-export const SearchIconContainer = styled(Flex)`
+export const SearchIconGrid = styled(Flex)`
   cursor: pointer;
   align-items: center;
   justify-content: center;
