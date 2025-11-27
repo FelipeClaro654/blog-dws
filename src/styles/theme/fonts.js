@@ -12,6 +12,7 @@ const fonts = {
     xl: "3.5rem",
   },
   weights: {
+    thin: 200,
     regular: 400,
     semibold: 600,
     bold: 600,

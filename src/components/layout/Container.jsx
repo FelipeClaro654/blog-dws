@@ -1,12 +1,23 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div.attrs((props) => ({
+  as: props.$as || "div",
+}))`
   width: 100%;
-  padding: 0 ${(props) => props.theme.grid.mobile.margin}
   margin: 0 auto;
+  display: grid;
+  gap: ${(props) => props.theme.grid.mobile.gap};
+  grid-template-columns: repeat(
+    ${(props) => props.theme.grid.mobile.columns},
+    1fr
+  );
 
   ${(props) => props.theme.breakpoint.desktop} {
-    padding: 0 ${(props) => props.theme.grid.desktop.margin};
-    max-width: ${(props) => props.theme.grid.desktop.container};
+    max-width: ${(props) => props.theme.grid.desktop.c};
+    grid-template-columns: repeat(
+      ${(props) => props.theme.grid.desktop.columns},
+      1fr
+    );
+    gap: ${(props) => props.theme.grid.desktop.gap};
   }
 `;

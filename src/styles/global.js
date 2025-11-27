@@ -7,8 +7,4 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
-
-  html {
-    font-size: 16px;
-  }
 `;

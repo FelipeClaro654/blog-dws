@@ -1,3 +1,4 @@
+import borders from "./borders";
 import { breakpoint, breakpoints, mediaQueries } from "./breakpoints";
 import colors from "./colors";
 import fonts from "./fonts";
@@ -14,6 +15,7 @@ const theme = {
   breakpoint,
   breakpoints,
   mediaQueries,
+  borders,
 };
 
 export default theme;

@@ -1,5 +1,6 @@
 const colors = {
   neutrals: {
+    white: "#FFF",
     lightest: "#F0F0F2",
     extraLight: "#E0E2E6",
     light: "#C0C2C8",

@@ -1,11 +1,11 @@
 import Header from "./components/header";
-import { Container } from "./components/layout";
+import { ApplicationWrapper } from "./components/layout";
 
 function App() {
   return (
-    <Container>
+    <ApplicationWrapper>
       <Header />
-    </Container>
+    </ApplicationWrapper>
   );
 }
 
