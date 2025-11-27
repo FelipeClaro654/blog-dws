@@ -5,7 +5,7 @@ export const HeaderContainer = styled(Container)`
   background: linear-gradient(
     to right,
     ${(props) => props.theme.colors.neutrals.white} 30%,
-    ${(props) => props.theme.colors.neutrals.lightest}90 90%
+    ${(props) => props.theme.colors.neutrals.lightest}60 90%
   );
   padding: ${(props) => props.theme.spaces["16px"]};
   border-bottom: 1px solid ${(props) => props.theme.colors.neutrals.lightest};
@@ -24,13 +24,14 @@ export const SearchIconContainer = styled(Flex)`
     height: ${(props) => props.theme.spaces["16px"]};
   }
   &:hover {
-    box-shadow: 0 0 0 4px ${(props) => props.theme.colors.neutrals.extraLight};
+    box-shadow: 0 0 0 ${(props) => props.theme.spaces["4px"]}
+      ${(props) => props.theme.colors.neutrals.extraLight};
   }
 `;
 
 export const LogoText = styled.span`
-  font-size: ${(props) => props.theme.fonts.sizes.xs};
   align-self: flex-end;
+  font-size: ${(props) => props.theme.fonts.sizes.xs};
   font-weight: ${(props) => props.theme.fonts.weights.thin};
 `;
 
