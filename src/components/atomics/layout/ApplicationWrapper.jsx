@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ApplicationWrapper = styled.div`
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(
     60deg,
     ${(props) => props.theme.colors.accent1.light}50 0%,

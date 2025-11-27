@@ -5,7 +5,7 @@ export const Column = styled.div`
     props.$flex &&
     `
     display: flex;
-    flex-direction: ${(props) => props.$column || "row"};  
+    flex-direction: ${props.$column ? "column" : "row"};  
   `}
 
   grid-column: span

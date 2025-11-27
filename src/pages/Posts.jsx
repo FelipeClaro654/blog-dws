@@ -1,13 +1,17 @@
 import { Post } from "@/components/compounds";
 import usePosts from "../hooks/usePosts";
-import { Column } from "@/components/atomics/layout";
-import { PostsContainer } from "./styles";
+import { Column, Grid } from "@/components/atomics/layout";
+import { PostLoading } from "@/components/compounds/posts";
 
 const Posts = () => {
-  const { data: posts, error } = usePosts();
+  const { data: posts, error, isLoading } = usePosts();
 
   if (error) {
     return <>Error!</>;
+  }
+
+  if (isLoading) {
+    return <PostLoading />;
   }
 
   if (!posts || !posts.length) {
@@ -15,13 +19,13 @@ const Posts = () => {
   }
 
   return (
-    <PostsContainer>
-      <Column>
+    <Grid>
+      <Column $flex $column>
         {posts.map((post) => {
           return <Post key={post.id} post={post} />;
         })}
       </Column>
-    </PostsContainer>
+    </Grid>
   );
 };
 

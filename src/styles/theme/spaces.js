@@ -1,5 +1,7 @@
 const spaces = {
+  "2px": "0.125rem",
   "4px": "0.25rem",
+  "6px": "0.375rem",
   "8px": "0.5rem",
   "10px": "0.625rem",
   "12px": "0.75rem",

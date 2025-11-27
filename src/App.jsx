@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Header } from "@/components/compounds";
-import { ApplicationWrapper } from "./components/atomics/layout";
+import { Header } from "@compounds";
+import { ApplicationWrapper } from "@atomics/layout";
 import AppRouter from "./AppRouter";
 
 function App() {

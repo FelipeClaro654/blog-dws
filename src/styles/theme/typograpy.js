@@ -38,7 +38,7 @@ const typography = {
   caption: `
       font-size: ${fonts.sizes.xs};
       line-height: ${fonts.lineHeights.normal};
-      font-weight: ${fonts.weights.regular};
+      font-weight: ${fonts.weights.thin};
     `,
 };
 

@@ -1,5 +1,6 @@
 const fonts = {
   lineHeights: {
+    regular: "100%",
     normal: "130%",
     medium: "150%",
   },
@@ -8,6 +9,7 @@ const fonts = {
     sm: "0.875rem",
     base: "1rem",
     md: "1.25rem",
+    mdl: "1.625rem",
     lg: "2.25rem",
     xl: "3.5rem",
   },

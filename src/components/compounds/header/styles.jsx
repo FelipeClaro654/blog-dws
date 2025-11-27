@@ -30,7 +30,7 @@ export const SearchIconGrid = styled(Flex)`
 
 export const LogoText = styled.span`
   align-self: flex-end;
-  font-size: ${(props) => props.theme.fonts.sizes.xs};
+  font-size: ${(props) => props.theme.fonts.sizes.sm};
   font-weight: ${(props) => props.theme.fonts.weights.thin};
 `;
 
