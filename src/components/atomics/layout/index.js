@@ -5,3 +5,4 @@ export * from "./ApplicationWrapper";
 export * from "./Card";
 export * from "./DotSeparator";
 export * from "./Skeleton";
+export * from "./Badge";

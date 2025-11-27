@@ -5,12 +5,18 @@ import {
   PostTitle,
 } from "./styles";
 import { Card } from "@atomics/layout";
-import { DotSeparator, Flex } from "@/components/atomics/layout";
+import {
+  Badge,
+  BadgeText,
+  DotSeparator,
+  Flex,
+} from "@/components/atomics/layout";
 import spaces from "@/styles/theme/spaces";
 import { formatPostDate } from "@/utils/date";
 import { memo } from "react";
 
 export const Post = memo(({ post }) => {
+  console.log(post);
   return (
     <Card $column>
       <ImageContainer $src={post.thumbnail_url} />
@@ -29,6 +35,13 @@ export const Post = memo(({ post }) => {
         </Flex>
         <PostTitle>{post.title}</PostTitle>
         <PostContent>{post.content}</PostContent>
+        <Flex>
+          {post.categories.map(({ id, name }) => (
+            <Badge key={id}>
+              <BadgeText>{name}</BadgeText>
+            </Badge>
+          ))}
+        </Flex>
       </Flex>
     </Card>
   );
