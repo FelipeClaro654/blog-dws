@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Post } from "@/components/compounds";
 import usePosts from "./hooks/usePosts";
 import { Column, Grid } from "@/components/atomics/layout";
-import { PostLoading, PostsEmpty } from "@/components/compounds/posts";
+import { PostsLoading, PostsEmpty } from "@/components/compounds/posts";
 
 const Posts = () => {
   const { data: posts, error, isLoading } = usePosts();
@@ -13,7 +13,7 @@ const Posts = () => {
   }
 
   if (isLoading) {
-    return <PostLoading />;
+    return <PostsLoading />;
   }
 
   if (!posts || !posts.length) {

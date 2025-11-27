@@ -2,7 +2,7 @@ import { Card, Column, Grid, Skeleton } from "@/components/atomics/layout";
 import { PostsLoadingWrapper } from "./styles";
 import colors from "@/styles/theme/colors";
 
-export const PostLoading = () => {
+export const PostsLoading = () => {
   return (
     <PostsLoadingWrapper>
       <Grid>
