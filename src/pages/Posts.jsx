@@ -1,13 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { Post } from "@/components/compounds";
 import usePosts from "./hooks/usePosts";
 import { Column, Grid } from "@/components/atomics/layout";
-import { PostLoading } from "@/components/compounds/posts";
+import { PostLoading, PostsEmpty } from "@/components/compounds/posts";
 
 const Posts = () => {
   const { data: posts, error, isLoading } = usePosts();
-
+  const navigate = useNavigate();
   if (error) {
-    return <>Error!</>;
+    navigate("/error");
+    return;
   }
 
   if (isLoading) {
@@ -15,7 +17,7 @@ const Posts = () => {
   }
 
   if (!posts || !posts.length) {
-    return <>Empty Posts</>;
+    return <PostsEmpty />;
   }
 
   return (
