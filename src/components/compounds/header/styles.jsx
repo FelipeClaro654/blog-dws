@@ -8,6 +8,11 @@ export const HeaderGrid = styled(Grid)`
     ${(props) => props.theme.colors.neutrals.lightest}60 90%
   );
   border-bottom: 1px solid ${(props) => props.theme.colors.neutrals.lightest};
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 `;
 
 export const SearchIconGrid = styled(Flex)`

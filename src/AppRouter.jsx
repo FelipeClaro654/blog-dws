@@ -3,11 +3,13 @@ import Posts from "./pages/posts";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Posts />} />
-      </Routes>
-    </BrowserRouter>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Posts />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 };
 

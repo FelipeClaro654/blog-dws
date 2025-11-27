@@ -8,4 +8,6 @@ export const ApplicationWrapper = styled.div`
     ${(props) => props.theme.colors.neutrals.lightest}00 50%,
     ${(props) => props.theme.colors.secondary.light}30 80%
   );
+  padding-top: ${(props) => props.theme.spaces["60px"]};
+  min-height: 100vh;
 `;

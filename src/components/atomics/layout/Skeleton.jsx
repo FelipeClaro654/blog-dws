@@ -10,7 +10,7 @@ export const Skeleton = styled.div`
       opacity: 1;
     }
     50% {
-      opacity: 0.4;
+      opacity: 0.6;
     }
     100% {
       opacity: 1;

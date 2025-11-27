@@ -19,7 +19,7 @@ const Posts = () => {
   }
 
   return (
-    <Grid>
+    <Grid $as="section">
       <Column $flex $column>
         {posts.map((post) => {
           return <Post key={post.id} post={post} />;

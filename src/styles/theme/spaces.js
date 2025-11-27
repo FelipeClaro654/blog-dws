@@ -12,6 +12,7 @@ const spaces = {
   "32px": "2rem",
   "40px": "2.5rem",
   "56px": "3.5rem",
+  "60px": "3.75rem",
 };
 
 export default spaces;

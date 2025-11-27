@@ -8,8 +8,9 @@ import { Card } from "@atomics/layout";
 import { DotSeparator, Flex } from "@/components/atomics/layout";
 import spaces from "@/styles/theme/spaces";
 import { formatPostDate } from "@/utils/date";
+import { memo } from "react";
 
-export const Post = ({ post }) => {
+export const Post = memo(({ post }) => {
   return (
     <Card $column>
       <ImageContainer $src={post.thumbnail_url} />
@@ -31,4 +32,4 @@ export const Post = ({ post }) => {
       </Flex>
     </Card>
   );
-};
+});
