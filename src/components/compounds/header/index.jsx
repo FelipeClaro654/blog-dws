@@ -11,13 +11,13 @@ import {
 export const Header = () => {
   return (
     <HeaderGrid $as="header">
-      <Column $mobile={3} $center>
+      <Column $mobile={3} $centerV>
         <LogoArea>
           <LogoSvg />
           <LogoText>world services</LogoText>
         </LogoArea>
       </Column>
-      <Column $mobile={1} $center>
+      <Column $mobile={1} $centerV>
         <SearchIconArea>
           <SearchIconGrid>
             <MagnifyingGlass />

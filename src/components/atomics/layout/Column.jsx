@@ -19,8 +19,14 @@ export const Column = styled.div`
   gap: ${(props) => props.theme.grid.mobile.gap};
 
   ${(props) =>
-    props.$center &&
+    props.$centerV &&
     `
     align-content: center;
+  `}
+
+  ${(props) =>
+    props.$centerH &&
+    `
+    justify-items: center;
   `}
 `;

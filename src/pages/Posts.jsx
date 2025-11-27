@@ -1,5 +1,5 @@
 import { Post } from "@/components/compounds";
-import usePosts from "../hooks/usePosts";
+import usePosts from "./hooks/usePosts";
 import { Column, Grid } from "@/components/atomics/layout";
 import { PostLoading } from "@/components/compounds/posts";
 

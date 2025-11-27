@@ -1,3 +1,5 @@
+import { memo } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   ImageContainer,
   PostContent,
@@ -13,12 +15,11 @@ import {
 } from "@/components/atomics/layout";
 import spaces from "@/styles/theme/spaces";
 import { formatPostDate } from "@/utils/date";
-import { memo } from "react";
 
 export const Post = memo(({ post }) => {
-  console.log(post);
+  const navigate = useNavigate();
   return (
-    <Card $column>
+    <Card $column onClick={() => navigate(`/posts/${post.id}`)}>
       <ImageContainer $src={post.thumbnail_url} />
       <Flex
         $padding={spaces["16px"]}
