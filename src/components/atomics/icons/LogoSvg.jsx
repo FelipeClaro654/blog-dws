@@ -1,4 +1,4 @@
-const LogoSvg = () => {
+export const LogoSvg = () => {
   return (
     <svg viewBox="0 0 57 12">
       <path
@@ -22,5 +22,3 @@ const LogoSvg = () => {
     </svg>
   );
 };
-
-export default LogoSvg;

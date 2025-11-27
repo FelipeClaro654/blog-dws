@@ -1,6 +1,5 @@
-import MagnifyingGlass from "../../icons/MagnifyingGlass";
-import { Column } from "../layout";
-import LogoSvg from "./LogoSvg";
+import { Column } from "@atomics/layout";
+import { LogoSvg, MagnifyingGlass } from "@atomics/icons";
 import {
   HeaderGrid,
   LogoArea,
@@ -9,7 +8,7 @@ import {
   SearchIconGrid,
 } from "./styles";
 
-const Header = () => {
+export const Header = () => {
   return (
     <HeaderGrid $as="header">
       <Column $mobile={3} $center>
@@ -28,5 +27,3 @@ const Header = () => {
     </HeaderGrid>
   );
 };
-
-export default Header;

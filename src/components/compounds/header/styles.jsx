@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Grid, Flex } from "../layout";
+import { Grid, Flex } from "../../atomics/layout";
 
 export const HeaderGrid = styled(Grid)`
   background: linear-gradient(
@@ -7,7 +7,6 @@ export const HeaderGrid = styled(Grid)`
     ${(props) => props.theme.colors.neutrals.white} 30%,
     ${(props) => props.theme.colors.neutrals.lightest}60 90%
   );
-  padding: ${(props) => props.theme.spaces["16px"]};
   border-bottom: 1px solid ${(props) => props.theme.colors.neutrals.lightest};
 `;
 

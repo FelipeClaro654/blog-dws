@@ -1,6 +1,6 @@
-import colors from "../styles/theme/colors";
+import colors from "@theme/colors";
 
-const MagnifyingGlass = () => {
+export const MagnifyingGlass = () => {
   return (
     <svg viewBox="0 0 512 512" fill={colors.neutrals.lightest}>
       <g>
@@ -9,5 +9,3 @@ const MagnifyingGlass = () => {
     </svg>
   );
 };
-
-export default MagnifyingGlass;

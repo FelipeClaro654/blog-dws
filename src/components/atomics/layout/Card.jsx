@@ -1,0 +1,8 @@
+import styled from "styled-components";
+import { Flex } from "./Flex";
+
+export const Card = styled(Flex)`
+  background: ${(props) => props.theme.colors.neutrals.white};
+  border-radius: ${(props) => props.theme.spaces["16px"]};
+  min-height: 150px;
+`;

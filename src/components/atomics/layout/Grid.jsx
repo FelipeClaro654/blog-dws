@@ -5,6 +5,7 @@ export const Grid = styled.div.attrs((props) => ({
 }))`
   width: 100%;
   margin: 0 auto;
+  padding: ${(props) => props.theme.spaces["16px"]};
   display: grid;
   gap: ${(props) => props.theme.grid.mobile.gap};
   grid-template-columns: repeat(
