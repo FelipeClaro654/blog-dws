@@ -1,3 +1,4 @@
+import { memo } from "react";
 import spaces from "../../../styles/theme/spaces";
 import { formatPostDate } from "../../../utils/date";
 import { Column, Flex } from "../../atomics";
@@ -24,4 +25,4 @@ const PostHeader = ({ post }) => {
   );
 };
 
-export default PostHeader;
+export default memo(PostHeader);

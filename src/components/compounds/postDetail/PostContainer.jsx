@@ -3,7 +3,7 @@ import { Column, TextBlock } from "@/components/atomics";
 import Styles from "./styles";
 import spaces from "@/styles/theme/spaces";
 
-export const PostContent = memo(({ post }) => {
+const PostContainer = memo(({ post }) => {
   return (
     <Column $flex $column $gap={spaces["24px"]}>
       <Styles.PostImg src={post.thumbnail_url} alt={post.title} />
@@ -11,3 +11,5 @@ export const PostContent = memo(({ post }) => {
     </Column>
   );
 });
+
+export default PostContainer;
