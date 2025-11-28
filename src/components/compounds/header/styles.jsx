@@ -13,6 +13,11 @@ export const HeaderGrid = styled(Grid)`
   left: 0;
   width: 100%;
   z-index: 1000;
+
+  ${(props) => props.theme.breakpoint.desktop} {
+    position: static;
+    height: ${(props) => props.theme.spaces["90px"]};
+  }
 `;
 
 export const SearchIconGrid = styled(Flex)`

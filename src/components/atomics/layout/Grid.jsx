@@ -14,7 +14,6 @@ export const Grid = styled.div.attrs((props) => ({
   );
 
   ${(props) => props.theme.breakpoint.desktop} {
-    max-width: ${(props) => props.theme.grid.desktop.container};
     grid-template-columns: repeat(
       ${(props) => props.theme.grid.desktop.columns},
       1fr

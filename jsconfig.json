@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"],
+      "@atomics/*": ["./src/components/atomics/*"],
+      "@compounds/*": ["./src/components/compounds/*"],
+      "@theme/*": ["./src/styles/theme/*"]
     }
   },
-  "include": ["src/**/*"] // Optional: specify files to include for language service
+  "include": ["src/**/*"]
 }

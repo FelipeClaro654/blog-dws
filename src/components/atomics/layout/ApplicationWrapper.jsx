@@ -10,4 +10,8 @@ export const ApplicationWrapper = styled.div`
   );
   padding-top: ${(props) => props.theme.spaces["60px"]};
   min-height: 100vh;
+
+  ${(props) => props.theme.breakpoint.desktop} {
+    padding-top: 0;
+  }
 `;
