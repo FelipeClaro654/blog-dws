@@ -1,7 +1,7 @@
 import { memo } from "react";
-import { Column, TextBlock } from "@/components/atomics";
+import { Column, TextBlock } from "@atomics";
 import Styles from "./styles";
-import spaces from "@/styles/theme/spaces";
+import spaces from "@theme/spaces";
 
 const PostContainer = memo(({ post }) => {
   return (

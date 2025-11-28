@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import spaces from "../../../styles/theme/spaces";
-import { Button, ButtonText, Column, Flex } from "../../atomics";
+import spaces from "@theme/spaces";
+import { Button, ButtonText, Column, Flex } from "@atomics";
 
 const PostBackButton = () => {
   const navigate = useNavigate();

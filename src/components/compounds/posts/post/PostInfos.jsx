@@ -1,7 +1,7 @@
-import spaces from "@/styles/theme/spaces";
+import spaces from "@theme/spaces";
 import { PostDataAndAuthor } from "./styles";
 import { formatPostDate } from "@utils/date";
-import { Flex, DotSeparator } from "@atomics/";
+import { Flex, DotSeparator } from "@atomics";
 
 const PostInfos = ({ post }) => {
   return (

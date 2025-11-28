@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Post } from "@/components/compounds";
+import { Post, PostsLoading, PostsEmpty } from "@compounds";
+import { Column, Grid } from "@atomics";
 import usePosts from "./hooks/usePosts";
-import { Column, Grid } from "@/components/atomics/layout";
-import { PostsLoading, PostsEmpty } from "@/components/compounds/posts";
 
 const Posts = () => {
   const { data: posts, error, isLoading } = usePosts();

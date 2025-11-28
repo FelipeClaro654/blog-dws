@@ -1,5 +1,4 @@
-import { Column, Grid } from "@/components/atomics/layout";
-import { H3 } from "@/components/atomics/typography";
+import { Column, Grid, H3 } from "@atomics";
 
 export const PostsEmpty = () => {
   return (

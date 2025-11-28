@@ -1,4 +1,4 @@
-import { Caption, H3, TextBlock } from "@/components/atomics/typography";
+import { Caption, H3, TextBlock } from "@atomics/typography";
 import styled from "styled-components";
 
 export const ImageContainer = styled.div`

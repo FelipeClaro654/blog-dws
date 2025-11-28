@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Caption, Flex, H3 } from "../../atomics";
+import { Caption, Flex, H3 } from "@atomics";
 
 const Styles = {
   Title: styled(H3)`

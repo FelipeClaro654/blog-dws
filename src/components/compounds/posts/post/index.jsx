@@ -1,10 +1,10 @@
 import { memo } from "react";
 import { useNavigate } from "react-router-dom";
-import { ImageContainer, PostContent, PostTitle } from "./styles";
-import spaces from "@/styles/theme/spaces";
-import { Flex, Card } from "@/components/atomics";
+import spaces from "@theme/spaces";
+import { Flex, Card } from "@atomics";
 import PostInfos from "./PostInfos";
 import PostBadges from "./PostBadges";
+import { ImageContainer, PostContent, PostTitle } from "./styles";
 
 export const Post = memo(({ post }) => {
   const navigate = useNavigate();

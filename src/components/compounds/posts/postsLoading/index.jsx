@@ -1,7 +1,6 @@
-import { Column, Grid } from "@/components/atomics/layout";
+import colors from "@theme/colors";
+import { Card, Skeleton, Column, Grid } from "@atomics";
 import { PostsLoadingWrapper } from "./styles";
-import colors from "@/styles/theme/colors";
-import { Card, Skeleton } from "@/components/atomics";
 
 export const PostsLoading = () => {
   return (

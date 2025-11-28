@@ -1,6 +1,6 @@
 import { memo } from "react";
-import { Grid } from "@/components/atomics/layout";
-import spaces from "@/styles/theme/spaces";
+import { Grid } from "@atomics";
+import spaces from "@theme/spaces";
 import PostHeader from "./PostHeader";
 import PostContainer from "./PostContainer";
 import PostBackButton from "./PostBackButton";

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Grid, Flex } from "../../atomics/layout";
+import { Grid, Flex } from "@atomics";
 
 export const HeaderGrid = styled.div`
   background: linear-gradient(
