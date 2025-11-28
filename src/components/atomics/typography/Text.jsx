@@ -12,6 +12,11 @@ export const BodySmall = styled.span`
   ${(props) => props.theme.typography.body.small}
 `;
 
-export const Caption = styled.span`
+export const Caption = styled.p`
   ${(props) => props.theme.typography.caption}
+`;
+
+export const TextBlock = styled(Caption)`
+  font-size: ${(props) => props.theme.fonts.sizes.sm};
+  line-height: ${(props) => props.theme.fonts.lineHeights.medium};
 `;

@@ -1,4 +1,4 @@
-import { Caption, H3 } from "@/components/atomics/typography";
+import { Caption, H3, TextBlock } from "@/components/atomics/typography";
 import styled from "styled-components";
 
 export const ImageContainer = styled.div`
@@ -19,9 +19,7 @@ export const PostTitle = styled(H3)`
   line-height: ${(props) => props.theme.fonts.lineHeights.normal};
 `;
 
-export const PostContent = styled(Caption)`
-  font-size: ${(props) => props.theme.fonts.sizes.sm};
-  line-height: ${(props) => props.theme.fonts.lineHeights.medium};
+export const PostContent = styled(TextBlock)`
   max-height: ${(props) => props.theme.spaces["40px"]};
   margin-top: -${(props) => props.theme.spaces["6px"]};
   display: -webkit-box;

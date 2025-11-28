@@ -7,7 +7,7 @@ export const Grid = styled.div.attrs((props) => ({
   margin: 0 auto;
   padding: ${(props) => props.theme.spaces["16px"]};
   display: grid;
-  gap: ${(props) => props.theme.grid.mobile.gap};
+  gap: ${(props) => props.$gapMobile || props.theme.grid.mobile.gap};
   grid-template-columns: repeat(
     ${(props) => props.theme.grid.mobile.columns},
     1fr
@@ -19,6 +19,6 @@ export const Grid = styled.div.attrs((props) => ({
       ${(props) => props.theme.grid.desktop.columns},
       1fr
     );
-    gap: ${(props) => props.theme.grid.desktop.gap};
+    gap: ${(props) => props.$gapDesktop || props.theme.grid.desktop.gap};
   }
 `;
