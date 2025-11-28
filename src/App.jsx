@@ -3,9 +3,19 @@ import { Header } from "@compounds";
 import { ApplicationWrapper } from "@atomics/layout";
 import AppRouter from "./AppRouter";
 
-function App() {
-  const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 2,
+      staleTime: 5 * 60 * 1000,
+      refetchOnWindowFocus: false,
+      refetchOnMount: true,
+      refetchOnReconnect: false,
+    },
+  },
+});
 
+function App() {
   return (
     <ApplicationWrapper>
       <QueryClientProvider client={queryClient}>
