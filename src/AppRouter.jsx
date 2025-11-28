@@ -3,7 +3,7 @@ import Posts from "./pages/Posts";
 import PostDetails from "./pages/PostDetails";
 import Error from "./pages/Error";
 import NotFound from "./pages/NotFound";
-import { PageLimiter } from "./components/atomics/layout/PageLimiter";
+import { PageLimiter } from "@atomics";
 
 const AppRouter = () => {
   return (

@@ -14,6 +14,7 @@ export default defineConfig({
       "@atomics": path.resolve(__dirname, "./src/components/atomics"),
       "@compounds": path.resolve(__dirname, "./src/components/compounds"),
       "@theme": path.resolve(__dirname, "./src/styles/theme"),
+      "@utils": path.resolve(__dirname, "./src/utils"),
     },
   },
 });

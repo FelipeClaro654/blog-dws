@@ -1,20 +1,9 @@
 import { memo } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  ImageContainer,
-  PostContent,
-  PostDataAndAuthor,
-  PostTitle,
-} from "./styles";
+import { ImageContainer, PostContent, PostTitle } from "./styles";
 import spaces from "@/styles/theme/spaces";
-import { formatPostDate } from "@/utils/date";
-import {
-  Badge,
-  BadgeText,
-  DotSeparator,
-  Flex,
-  Card,
-} from "@/components/atomics";
+import { Badge, BadgeText, Flex, Card } from "@/components/atomics";
+import PostInfos from "./PostInfos";
 
 export const Post = memo(({ post }) => {
   const navigate = useNavigate();
@@ -27,13 +16,7 @@ export const Post = memo(({ post }) => {
         $column
         $justifyContent="flex-start"
       >
-        <Flex $gap={spaces["4px"]}>
-          <PostDataAndAuthor>
-            {formatPostDate(post.createdAt)}
-          </PostDataAndAuthor>
-          <DotSeparator />
-          <PostDataAndAuthor>{post.author.name}</PostDataAndAuthor>
-        </Flex>
+        <PostInfos post={post} />
         <PostTitle>{post.title}</PostTitle>
         <PostContent>{post.content}</PostContent>
         <Flex>
