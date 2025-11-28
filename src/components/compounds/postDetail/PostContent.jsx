@@ -1,4 +1,4 @@
-import { BodyLargeSemibold, Column, Flex } from "@/components/atomics";
+import { Column, Flex } from "@/components/atomics";
 import Styles from "./styles";
 import spaces from "@/styles/theme/spaces";
 import { formatPostDate } from "../../../utils/date";
@@ -26,6 +26,9 @@ export const PostContent = ({ post }) => {
           </Styles.AuthorInfo>
           <Styles.PostDate>{formatPostDate(post.createdAt)}</Styles.PostDate>
         </Styles.AuthorData>
+      </Flex>
+      <Flex>
+        <Styles.PostImg src={post.thumbnail_url} alt={post.title} />
       </Flex>
     </Column>
   );

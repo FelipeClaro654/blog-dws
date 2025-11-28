@@ -28,6 +28,10 @@ const Styles = {
     font-size: ${(props) => props.theme.fonts.sizes.xs};
     color: ${(props) => props.theme.colors.neutrals.dark};
   `,
+  PostImg: styled.img`
+    width: 100%;
+    border-radius: ${(props) => props.theme.borders.radius.small};
+  `,
 };
 
 export default Styles;
