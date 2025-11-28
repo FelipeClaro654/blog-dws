@@ -5,7 +5,7 @@ import spaces from "@/styles/theme/spaces";
 
 const PostContainer = memo(({ post }) => {
   return (
-    <Column $flex $column $gap={spaces["24px"]}>
+    <Column $flex $column $gap={spaces["28px"]}>
       <Styles.PostImg src={post.thumbnail_url} alt={post.title} />
       <TextBlock>{post.content}</TextBlock>
     </Column>
