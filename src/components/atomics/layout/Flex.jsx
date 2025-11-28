@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Flex = styled.div`
+export const Flex = styled.div.attrs((props) => ({
+  as: props.$as || "div",
+}))`
   display: flex;
   padding: ${(props) => props.$padding || "0"};
   ${(props) => props.$paddingTop && `padding-top: ${props.$paddingTop};`}

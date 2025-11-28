@@ -10,3 +10,5 @@ export const breakpoint = {
   desktop: `@media (min-width: ${breakpoints.desktop})`,
   mobileOnly: `@media (max-width: 767px)`,
 };
+
+export const pageLimit = "1440px";

@@ -10,7 +10,6 @@ const grid = {
     columns: 12,
     margin: spaces["56px"],
     gap: spaces["24px"],
-    container: "1366px",
   },
 };
 

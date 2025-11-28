@@ -1,5 +1,10 @@
 import borders from "./borders";
-import { breakpoint, breakpoints, mediaQueries } from "./breakpoints";
+import {
+  breakpoint,
+  breakpoints,
+  mediaQueries,
+  pageLimit,
+} from "./breakpoints";
 import colors from "./colors";
 import fonts from "./fonts";
 import grid from "./grid";
@@ -15,6 +20,7 @@ const theme = {
   breakpoint,
   breakpoints,
   mediaQueries,
+  pageLimit,
   borders,
 };
 

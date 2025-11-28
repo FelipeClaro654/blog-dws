@@ -3,10 +3,11 @@ import Posts from "./pages/Posts";
 import PostDetails from "./pages/PostDetails";
 import Error from "./pages/Error";
 import NotFound from "./pages/NotFound";
+import { PageLimiter } from "./components/atomics/layout/PageLimiter";
 
 const AppRouter = () => {
   return (
-    <main>
+    <PageLimiter $as="main" $column>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Posts />} />
@@ -16,7 +17,7 @@ const AppRouter = () => {
           <Route path="/error" element={<Error />} />
         </Routes>
       </BrowserRouter>
-    </main>
+    </PageLimiter>
   );
 };
 

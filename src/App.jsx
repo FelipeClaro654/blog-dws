@@ -17,7 +17,7 @@ const queryClient = new QueryClient({
 
 function App() {
   return (
-    <ApplicationWrapper>
+    <ApplicationWrapper $justifyContent="center" $column>
       <QueryClientProvider client={queryClient}>
         <Header />
         <AppRouter />

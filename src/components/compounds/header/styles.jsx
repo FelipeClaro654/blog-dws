@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Grid, Flex } from "../../atomics/layout";
 
-export const HeaderGrid = styled(Grid)`
+export const HeaderGrid = styled.div`
   background: linear-gradient(
     to right,
     ${(props) => props.theme.colors.neutrals.white} 30%,
@@ -53,4 +53,10 @@ export const LogoArea = styled(Flex)`
 
 export const SearchIconArea = styled(Flex)`
   justify-content: end;
+`;
+
+export const HeaderLimiter = styled(Grid)`
+  height: 100%;
+  max-width: ${(props) => props.theme.pageLimit};
+  align-content: center;
 `;
