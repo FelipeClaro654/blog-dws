@@ -4,7 +4,7 @@ import HeaderSearch from "./HeaderSearch";
 
 export const Header = () => {
   return (
-    <HeaderGrid $as="header">
+    <HeaderGrid>
       <HeaderLimiter>
         <HeaderLogo />
         <HeaderSearch />

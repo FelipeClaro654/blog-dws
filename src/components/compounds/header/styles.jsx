@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Grid, Flex } from "@atomics";
 
-export const HeaderGrid = styled.div`
+export const HeaderGrid = styled.header`
   background: linear-gradient(
     to right,
     ${(props) => props.theme.colors.neutrals.white} 30%,
