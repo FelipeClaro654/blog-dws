@@ -59,4 +59,8 @@ export const HeaderLimiter = styled(Grid)`
   height: 100%;
   max-width: ${(props) => props.theme.pageLimit};
   align-content: center;
+
+  ${(props) => props.theme.breakpoint.desktop} {
+    padding: 0 ${(props) => props.theme.spaces["56px"]};
+  }
 `;

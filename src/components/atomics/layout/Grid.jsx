@@ -14,6 +14,7 @@ export const Grid = styled.div.attrs((props) => ({
   );
 
   ${(props) => props.theme.breakpoint.desktop} {
+    padding: 0;
     grid-template-columns: repeat(
       ${(props) => props.theme.grid.desktop.columns},
       1fr
