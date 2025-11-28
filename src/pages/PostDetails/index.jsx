@@ -18,7 +18,7 @@ const Post = () => {
   }, [error, navigate]);
 
   if (isLoading) return <div>Loading...</div>;
-  if (!post) return null;
+  if (!post) return <div>No posts!</div>;
 
   return <PostDetail post={post} />;
 };

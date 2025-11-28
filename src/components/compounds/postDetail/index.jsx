@@ -13,17 +13,15 @@ const PostDetail = memo(({ post }) => {
   };
   return (
     <Grid $as="section">
-      <Column>
-        <Column $flex $column $mobile={1} $desktop={2}>
-          <Button variant="secondary" onClick={goBack}>
-            <Flex $gap={spaces["6px"]} $alignItems="center">
-              <ArrowLeft size={spaces["16px"]} />
-              <ButtonText>Back</ButtonText>
-            </Flex>
-          </Button>
-        </Column>
-        <PostContent post={post} />
+      <Column $flex $column $mobile={1} $desktop={2}>
+        <Button variant="secondary" onClick={goBack}>
+          <Flex $gap={spaces["6px"]} $alignItems="center">
+            <ArrowLeft size={spaces["16px"]} />
+            <ButtonText>Back</ButtonText>
+          </Flex>
+        </Button>
       </Column>
+      <PostContent post={post} />
     </Grid>
   );
 });

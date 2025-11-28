@@ -11,6 +11,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const PostDataAndAuthor = styled(Caption)`
+  font-size: ${(props) => props.theme.fonts.sizes.sm};
   color: ${(props) => props.theme.colors.neutrals.extraDark};
 `;
 
@@ -19,8 +20,9 @@ export const PostTitle = styled(H3)`
 `;
 
 export const PostContent = styled(Caption)`
+  font-size: ${(props) => props.theme.fonts.sizes.sm};
   line-height: ${(props) => props.theme.fonts.lineHeights.medium};
-  max-height: ${(props) => props.theme.spaces["32px"]};
+  max-height: ${(props) => props.theme.spaces["40px"]};
   margin-top: -${(props) => props.theme.spaces["6px"]};
   display: -webkit-box;
   -webkit-box-orient: vertical;
