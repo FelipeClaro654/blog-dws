@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Post } from "@/components/compounds";
 import usePosts from "./hooks/usePosts";
@@ -7,10 +8,14 @@ import { PostsLoading, PostsEmpty } from "@/components/compounds/posts";
 const Posts = () => {
   const { data: posts, error, isLoading } = usePosts();
   const navigate = useNavigate();
-  if (error) {
-    navigate("/error");
-    return;
-  }
+
+  useEffect(() => {
+    if (error) {
+      navigate("/error", {
+        replace: true,
+      });
+    }
+  }, [error, navigate]);
 
   if (isLoading) {
     return <PostsLoading />;
