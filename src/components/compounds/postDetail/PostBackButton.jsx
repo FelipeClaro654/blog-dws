@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import spaces from "@theme/spaces";
-import { Button, ButtonText, Column, Flex } from "@atomics";
+import { Button, InteractiveText, Column, Flex } from "@atomics";
 
 const PostBackButton = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const PostBackButton = () => {
       <Button variant="secondary" onClick={goBack}>
         <Flex $gap={spaces["6px"]} $alignItems="center">
           <ArrowLeft size={spaces["16px"]} />
-          <ButtonText>Back</ButtonText>
+          <InteractiveText>Back</InteractiveText>
         </Flex>
       </Button>
     </Column>
