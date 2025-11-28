@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Column, Grid } from "@/components/atomics/layout";
+
 import usePost from "./hooks/usePost";
-import { BaseButton, ButtonText } from "@/components/atomics/buttons";
+import PostDetail from "@/components/compounds/postDetail";
 
 const Post = () => {
   const { id } = useParams();
@@ -20,15 +20,7 @@ const Post = () => {
   if (isLoading) return <div>Loading...</div>;
   if (!post) return null;
 
-  return (
-    <Grid $as="section">
-      <Column $flex $column>
-        <BaseButton>
-          <ButtonText>Back</ButtonText>
-        </BaseButton>
-      </Column>
-    </Grid>
-  );
+  return <PostDetail post={post} />;
 };
 
 export default Post;

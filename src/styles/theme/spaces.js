@@ -5,6 +5,7 @@ const spaces = {
   "8px": "0.5rem",
   "10px": "0.625rem",
   "12px": "0.75rem",
+  "14px": "0.875rem",
   "16px": "1rem",
   "24px": "1.5rem",
   "28px": "1.75rem",
@@ -13,6 +14,7 @@ const spaces = {
   "40px": "2.5rem",
   "56px": "3.5rem",
   "60px": "3.75rem",
+  "90px": "5.625rem",
 };
 
 export default spaces;
