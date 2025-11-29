@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Post, PostsLoading, PostsEmpty } from "@compounds";
-import { Column, Grid } from "@atomics";
+import { PostsLoading, PostsEmpty } from "@compounds";
 import usePosts from "./hooks/usePosts";
+import { PostsProvider } from "@context/PostsProvider";
+import { Posts } from "@compounds/posts";
 
-const Posts = () => {
+const PostsPage = () => {
   const { data: posts, error, isLoading } = usePosts();
   const navigate = useNavigate();
 
@@ -25,14 +26,10 @@ const Posts = () => {
   }
 
   return (
-    <Grid $as="section">
-      <Column $flex $column>
-        {posts.map((post) => {
-          return <Post key={post.id} post={post} />;
-        })}
-      </Column>
-    </Grid>
+    <PostsProvider posts={posts}>
+      <Posts />
+    </PostsProvider>
   );
 };
 
-export default Posts;
+export default PostsPage;

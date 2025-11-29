@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
+import { Loader2 } from "lucide-react";
 import usePost from "./hooks/usePost";
-import PostDetail from "@/components/compounds/postDetail";
+import PostDetail from "@compounds/postDetail";
 
 const Post = () => {
   const { id } = useParams();
@@ -17,7 +17,7 @@ const Post = () => {
     }
   }, [error, navigate]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <Loader2 />;
   if (!post) return <div>No posts!</div>;
 
   return <PostDetail post={post} />;

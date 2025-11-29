@@ -15,13 +15,19 @@ export const baseStyles = {
   variant: {
     secondary: css`
       background-color: transparent;
-
       color: ${(props) => props.theme.colors.secondary.medium};
       border: 1px solid ${(props) => props.theme.colors.secondary.medium};
-
       &:hover {
         background-color: ${(props) => props.theme.colors.neutrals.lightest};
       }
+    `,
+    ghost: css`
+      background: transparent;
+      border: none;
+      font-size: ${(props) => props.theme.spaces["16px"]};
+      font-weight: ${(props) => props.theme.fonts.weights.thin};
+      color: ${(props) => props.theme.colors.neutrals.darkest};
+      padding: 0;
     `,
   },
 };

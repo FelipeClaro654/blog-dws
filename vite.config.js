@@ -15,6 +15,7 @@ export default defineConfig({
       "@compounds": path.resolve(__dirname, "./src/components/compounds"),
       "@theme": path.resolve(__dirname, "./src/styles/theme"),
       "@utils": path.resolve(__dirname, "./src/utils"),
+      "@context": path.resolve(__dirname, "./src/context"),
     },
   },
 });

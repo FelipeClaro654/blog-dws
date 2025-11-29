@@ -17,6 +17,6 @@ export const Flex = styled.div.attrs((props) => ({
   gap: ${(props) => props.$gap || props.theme.grid.mobile.gap};
 
   ${(props) => props.theme.breakpoint.desktop} {
-    gap: ${(props) => props.theme.grid.desktop.gap};
+    gap: ${(props) => props.$gap || props.theme.grid.desktop.gap};
   }
 `;
